@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Utopia School · A place where you belong</title>
+  <meta name="description" content="Utopia — a child-centred, NEP-aligned day boarding school focused on love, freedom of expression and belonging." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#0f766e;--muted:#6b7280;--bg:#f8fafc;--card:#ffffff}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;background:var(--bg);color:#0f172a}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    header{background:linear-gradient(180deg,rgba(15,118,110,0.06),transparent);backdrop-filter:blur(4px)}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo img{width:56px;height:56px;border-radius:10px;object-fit:cover}
+    .nav-links{display:flex;gap:14px;align-items:center}
+    .nav-links a{color:var(--accent);text-decoration:none;font-weight:600}
+    .cta{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr;gap:22px;padding:40px 0}
+    .hero-card{background:linear-gradient(180deg,rgba(255,255,255,0.9),#fff);border-radius:14px;padding:28px;box-shadow:0 6px 24px rgba(15,23,42,0.06)}
+    .kpis{display:flex;gap:18px;margin-top:18px}
+    .kpi{background:var(--card);padding:12px 14px;border-radius:10px;flex:1;text-align:center}
+
+    /* Sections */
+    section{margin:34px 0}
+    h2{font-size:1.45rem;margin:0 0 10px}
+    p.lead{color:var(--muted);margin:0 0 12px}
+    .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+
+    /* Cards */
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.03)}
+    ul.fac{list-style:none;padding:0;margin:0}
+    ul.fac li{padding:8px 0;border-bottom:1px dashed #eef2f7}
+
+    /* Contact */
+    form{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    input,textarea,select{padding:10px;border-radius:8px;border:1px solid #e6eef0;font-size:0.95rem}
+    button{grid-column:1/-1;padding:12px 16px;border-radius:10px;background:var(--accent);color:#fff;border:0;font-weight:700}
+
+    footer{border-top:1px solid #e6eef0;padding:18px 0;margin-top:32px;color:var(--muted);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+
+    /* Responsive tweaks */
+    @media(min-width:900px){.hero{grid-template-columns:1.1fr .9fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav aria-label="Primary">
+        <div class="logo">
+          <!-- Replace logo.png with your real logo -->
+          <img src="/assets/logo.png" alt="Utopia logo (replace)"/>
+          <div>
+            <strong>Utopia School</strong>
+            <div style="font-size:0.85rem;color:var(--muted)">A place where you belong</div>
+          </div>
+        </div>
+        <div class="nav-links" role="navigation">
+          <a href="#intent">Intent</a>
+          <a href="#method">Learning Methodology</a>
+          <a href="#design">Design &amp; Infrastructure</a>
+          <a href="#team">Facilitators</a>
+          <a href="#admissions">Admissions</a>
+          <a class="cta" href="#visit">Visit / Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-card">
+        <h1 style="margin:0 0 8px">Utopia — where love, freedom &amp; belonging grow</h1>
+        <p class="lead">An NEP-aligned day boarding school in Satna focused on child-centred learning: mixed activities and academics shaped around each child's curiosity and natural tendencies.</p>
+        <div class="kpis">
+          <div class="kpi"><div style="font-weight:800;font-size:1.2rem">100+</div><div style="font-size:0.9rem;color:var(--muted)">Admissions (first session)</div></div>
+          <div class="kpi"><div style="font-weight:800;font-size:1.2rem">NEP</div><div style="font-size:0.9rem;color:var(--muted)">Aligned curriculum</div></div>
+          <div class="kpi"><div style="font-weight:800;font-size:1.2rem">Day Boarding</div><div style="font-size:0.9rem;color:var(--muted)">Holistic routines</div></div>
+        </div>
+        <p style="margin-top:18px;color:var(--muted)">“To love” and “freedom of expression and action” are the most important and inherent traits of a human being. Utopia is founded on creating an environment where a child feels that they belong.</p>
+        <div style="display:flex;gap:12px;margin-top:18px;flex-wrap:wrap">
+          <a class="cta" href="#admissions">Apply Now</a>
+          <a href="#visit" style="padding:10px;border-radius:10px;background:#fff;border:1px solid #e6eef0;text-decoration:none;font-weight:700">Request a Visit</a>
+        </div>
+      </div>
+
+      <aside class="card" aria-labelledby="contact-heading">
+        <h3 id="contact-heading">Visit / Contact</h3>
+        <p class="lead">We'd love to show you the place. Email or WhatsApp to schedule a visit.</p>
+        <p style="margin:8px 0"><strong>Email:</strong> admissions@utopiavillage.info<br><strong>Phone:</strong> +91 93039 98684</p>
+        <a href="https://wa.me/919303998684" aria-label="WhatsApp" style="display:inline-block;padding:10px 12px;border-radius:8px;background:linear-gradient(90deg,var(--accent),#065f56);color:white;text-decoration:none;font-weight:700">WhatsApp Us</a>
+
+        <hr style="margin:16px 0;border:none;border-top:1px dashed #eef2f7">
+        <h4 style="margin:0 0 8px">Quick Tour</h4>
+        <p class="lead">A short visual tour and FAQs to help you understand how Utopia works.</p>
+        <a href="#design" style="text-decoration:none;font-weight:700;color:var(--accent)">Explore Design &amp; Infrastructure →</a>
+      </aside>
+    </section>
+
+    <section id="intent">
+      <h2>Intent</h2>
+      <p class="lead">We do not call Utopia a typical 'school' — it's a place to belong. The curriculum is flexible, activity-rich and child-led where facilitators design a learning environment that fosters inherent creativity and curiosity.</p>
+      <div class="grid-3" style="margin-top:12px">
+        <div class="card">
+          <h3>Belonging-focused</h3>
+          <p class="lead">Emotional safety and agency are primary. Children choose and explore with gentle guidance.</p>
+        </div>
+        <div class="card">
+          <h3>Flexible curriculum</h3>
+          <p class="lead">Mix of academics, projects and life skills tuned to each age group.</p>
+        </div>
+        <div class="card">
+          <h3>Community rooted</h3>
+          <p class="lead">Strong parent partnerships and local connections so learning is contextual.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="method">
+      <h2>Learning Methodology</h2>
+      <p class="lead">A blend of play-based learning, project work, guided discovery and periodic assessments that prioritise understanding over rote memorisation.</p>
+      <div class="grid-3" style="margin-top:12px">
+        <div class="card">
+          <h3>Projects &amp; Makerspaces</h3>
+          <p class="lead">Hands-on projects let children apply concepts and create tangible work.</p>
+        </div>
+        <div class="card">
+          <h3>Facilitator-led circles</h3>
+          <p class="lead">Small-group discussions that promote voice, reflection and collaborative problem solving.</p>
+        </div>
+        <div class="card">
+          <h3>Assessment for learning</h3>
+          <p class="lead">Formative feedback and portfolios replace single high-stakes exams wherever possible.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="design">
+      <h2>Design &amp; Infrastructure</h2>
+      <p class="lead">Open classrooms, nature-integrated play areas, secure child-friendly dorms for day-boarding routines, and activity zones for arts, sports and STEM.</p>
+      <div class="grid-3" style="margin-top:12px">
+        <div class="card">
+          <h3>Open learning studios</h3>
+          <p class="lead">Flexible furniture, visible student work and low-stimulus corners for focused time.</p>
+        </div>
+        <div class="card">
+          <h3>Outdoor &amp; Garden</h3>
+          <p class="lead">Gardens for learning science, food, and responsibility—children help tend them.</p>
+        </div>
+        <div class="card">
+          <h3>Safety &amp; Accessibility</h3>
+          <p class="lead">Secure entry, trained staff, first-aid and barrier-free access across campus.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="team">
+      <h2>Facilitators</h2>
+      <p class="lead">Our team are facilitators — trained educators who observe, scaffold and co-create learning experiences with children.</p>
+      <div class="card" style="margin-top:12px">
+        <ul class="fac">
+          <li><strong>Lead Facilitator:</strong> Experienced in NEP-friendly pedagogy and community learning.</li>
+          <li><strong>Arts &amp; Culture:</strong> Specialists who mentor expression through multiple art forms.</li>
+          <li><strong>Sport &amp; Outdoor:</strong> Coaches focusing on play, teamwork and motor skills.</li>
+          <li><strong>Support Staff:</strong> Counsellors, health &amp; safety officers and parent liaisons.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="admissions">
+      <h2>Admissions</h2>
+      <p class="lead">Admissions are open. We encourage families to visit and meet facilitators before enrolment.</p>
+      <div class="card" style="margin-top:12px">
+        <h4 style="margin:0 0 10px">Apply online</h4>
+        <!-- Simple client-side form; for production hook this to server or Google Forms -->
+        <form id="applyForm" onsubmit="onApply(event)">
+          <input name="studentName" placeholder="Student's name *" required />
+          <select name="gender" aria-label="Gender" required>
+            <option value="">Gender *</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+          <input name="fatherName" placeholder="Father's name" />
+          <input name="motherName" placeholder="Mother's name" />
+          <input name="birthDate" type="date" placeholder="Birth date" />
+          <input name="phone" type="tel" placeholder="Mobile number *" required />
+          <input name="email" type="email" placeholder="Email *" required />
+          <textarea name="notes" placeholder="Any notes / questions" rows="3"></textarea>
+          <button type="submit">Submit Application</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="visit">
+      <h2>Visit Us</h2>
+      <p class="lead">We welcome visits — please schedule a time so we can show you around and introduce the team.</p>
+      <div class="card" style="margin-top:12px">
+        <strong>Address:</strong>
+        <p class="lead">Utopia Village Campus — Satna (replace with exact address)</p>
+        <p><strong>Email:</strong> admissions@utopiavillage.info<br><strong>Phone:</strong> +91 93039 98684</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="container">
+    <div>© <span id="year"></span> Utopia Village · Designed with care · <a href="#admissions" style="color:var(--accent);text-decoration:none">Admissions</a></div>
+    <div>Made with ❤️ · Contact: admissions@utopiavillage.info</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function onApply(e){
+      e.preventDefault();
+      // Minimal client-side behaviour — replace with actual submission integration.
+      const fd = new FormData(e.target);
+      const name = fd.get('studentName');
+      alert('Thanks '+(name||'family')+" — application received (demo). We'll contact you soon.\n\nNote: connect this form to your server or Google Forms for real submissions.");
+      e.target.reset();
+    }
+  </script>
+
+  <!--
+    How to use:
+    1. Replace /assets/logo.png with your real logo image (recommended sizes: 200x200 or svg).
+    2. Replace contact details, address and any placeholder text with official content from utopiavillage.info.
+    3. Hook the admission form to a backend (e.g. Google Forms, Formspree, or your server) instead of the demo alert.
+    4. Add real photos in <img> tags or a gallery section. Consider lazy-loading images for performance.
+    5. For SEO, add Open Graph and Twitter meta tags and replace meta description with unique copy.
+  -->
+</body>
+</html>
